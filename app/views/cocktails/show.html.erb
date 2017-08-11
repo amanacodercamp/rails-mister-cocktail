@@ -5,6 +5,7 @@
 <p>
   <strong>Name:</strong>
   <%= @cocktail.name %>
+
   <br>
   <strong>Doses:</strong>
   <% @cocktail.doses.each do |dose| %>
@@ -13,6 +14,7 @@
   <% end %>
 </p>
 
+<%= cl_image_tag @cocktail.photo, width: 400, height: 300, crop: :fill %>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
