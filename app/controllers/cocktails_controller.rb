@@ -43,7 +43,7 @@ class CocktailsController < ApplicationController
   # DELETE /cocktails/1
   def destroy
     @cocktail.destroy
-    redirect_to cocktails_url, notice: 'Cocktail was successfully destroyed.'
+    redirect_to cocktails_path, notice: 'Cocktail was successfully destroyed.'
   end
 
   private

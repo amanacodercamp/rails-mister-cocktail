@@ -5,18 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# Ingredient.create(name: "lemon")
-# Ingredient.create(name: "ice")
-# Ingredient.create(name: "mint leaves")
-# Ingredient.create(name: "orange juice")
-# Ingredient.create(name: "champagne")
-# Ingredient.create(name: "sugar")
-# Ingredient.create(name: "strawberry")
-# Ingredient.create(name: "sparkling water")
-# Ingredient.create(name: "coffee")
-# Ingredient.create(name: "baileys")
-# Ingredient.create(name: "rum")
-# Ingredient.create(name: "bourbon")
+
 
 require 'json'
 require 'open-uri'
@@ -30,3 +19,16 @@ ingredients["drinks"].each do |i|
   name = i["strIngredient1"]
   Ingredient.create(name: name)
 end
+
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "orange juice")
+Ingredient.create(name: "champagne")
+Ingredient.create(name: "sugar")
+Ingredient.create(name: "strawberry")
+Ingredient.create(name: "sparkling water")
+Ingredient.create(name: "coffee")
+Ingredient.create(name: "baileys")
+Ingredient.create(name: "rum")
+Ingredient.create(name: "bourbon")
